@@ -44,3 +44,8 @@ let x = null,
             context.strokeStyle = el.style.backgroundColor;
         };
     });
+
+    // eraser button
+    document.getElementById('eraser').onclick = function() {
+        context.strokeStyle = "#FFFFFF";
+    }
