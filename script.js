@@ -3,20 +3,21 @@ const canvas = document.getElementById("canvas");
 canvas.height = window.innerHeight -100;
 canvas.width = window.innerWidth -50;
 
-const context = canvas.getCounted("2d");
+const context = canvas.getContext("2d");
 
 let x = null, 
     y = null;
     context.lineWidth = 5;
-
     let draw = false;
-    context.strokeStyle = "#010600";
+    let history = [];
 
+    // mouse events
     window.addEventListener('mousedown', (e)=>(draw=true))
+
     window.addEventListener('mouseup', (e)=>(draw=false))
 
     window.addEventListener('mousemove', (e)=>{
-        if(x=null || y==null || !draw){
+        if(x==null || y==null || !draw){
             x = e.clientX;
             y = e.clientY;
             return;
@@ -27,16 +28,18 @@ let x = null,
             context.beginPath();
             context.moveTo(x, y);
             context.lineTo(currentX, currentY);
-            context.strokeStyle();
+            context.stroke();
 
             x = currentX;
             y = currentY;
     });
 
+    // clear button
     document.getElementById('clear').onclick = function() {
         context.clearRect(0,0,canvas.width,canvas.height);
     };
 
+    // color change buttons
     document.querySelectorAll('.colorChange').forEach(el=>{
         el.onclick = function(){
             context.strokeStyle = el.style.backgroundColor;
