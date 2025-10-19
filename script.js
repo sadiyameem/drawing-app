@@ -52,7 +52,9 @@ let x = null,
 
     // slider for the eraser
     const sizeSlider = document.getElementById('size');
+    const sizeValue = document.getElementById('sizeValue');
     sizeSlider.addEventListener('input', function() {
         context.lineWidth = this.value;
+        sizeValue.textContent = this.value;
     });
 
