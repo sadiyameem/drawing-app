@@ -16,7 +16,7 @@ let x = null,
     window.addEventListener('mouseup', (e)=>(draw=false))
 
     window.addEventListener('mousemove', (e)=>{
-        if(x=null ||y==null ||!draw){
+        if(x=null || y==null || !draw){
             x = e.clientX;
             y = e.clientY;
             return;
@@ -27,4 +27,18 @@ let x = null,
             context.beginPath();
             context.moveTo(x, y);
             context.lineTo(currentX, currentY);
+            context.strokeStyle();
+
+            x = currentX;
+            y = currentY;
+    });
+
+    document.getElementById('clear').onclick = function() {
+        context.clearRect(0,0,canvas.width,canvas.height);
+    };
+
+    document.querySelectorAll('.colorChange').forEach(el=>{
+        el.onclick = function(){
+            context.strokeStyle = el.style.backgroundColor;
+        };
     });
