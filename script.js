@@ -49,3 +49,10 @@ let x = null,
     document.getElementById('eraser').onclick = function() {
         context.strokeStyle = "#FFFFFF";
     }
+
+    // slider for the eraser
+    const sizeSlider = document.getElementById('size');
+    sizeSlider.addEventListener('input', function() {
+        context.lineWidth = this.value;
+    });
+
