@@ -18,3 +18,5 @@ I made this project because based on the comments I got for my other projects it
 A challenge was to make the sidebar appear/work. I learned how to use HTML Canvas in a fun way.
 
 Created by Sadiya
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
