@@ -41,7 +41,13 @@ let x = null,
     // color change buttons
     document.querySelectorAll('.colorChange').forEach(el=>{
         el.onclick = function(){
+            document.querySelectorAll('.colorChange').forEach(btn => btn.classList.remove('selected'));
+            this.classList.add('selected');
+
             context.strokeStyle = el.style.backgroundColor;
+
+            erasing = false;
+            document.getElementById('eraser').style.backgroundColor = 'pink';
         };
     });
 
