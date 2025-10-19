@@ -15,7 +15,6 @@
 
             #canvas {
                 border: 1px solid black;
-                flex: 1;
             }
 
             #eraser {
@@ -31,69 +30,43 @@
             .selected {
                 border: 3px solid black;
             }
-
-            body {
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                height: 100vh;
-            }
-
-            #container {
-                display: flex;
-                width: 95%;
-                height: 95vh;
-            }
-
-            #sidebar {
-                width: 200px;
-                background-color: white;
-                padding: 10px;
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-                color: white;
-            }
         </style>
-        <div id="container">
-            <canvas id="canvas"></canvas>
-            <div id="sidebar">
-            <button class="colorChange" style="background-color: black"></button>
-            <button class="colorChange" style="background-color: red"></button>
-            <button class="colorChange" style="background-color: green"></button>
-            <button class="colorChange" style="background-color: blue"></button>
-            <button class="colorChange" style="background-color: purple"></button>
-            <button class="colorChange" style="background-color: pink"></button>
-            <button class="colorChange" style="background-color: yellow"></button>
-            <button class="colorChange" style="background-color: orange"></button>
-            <button class="colorChange" style="background-color: white"></button>
-            <button class="colorChange" style="background-color: brown"></button>
-            <button class="colorChange" style="background-color: gray"></button>
-            <button class="colorChange" style="background-color: cyan"></button>
-            <button class="colorChange" style="background-color: magenta"></button>
-            <button class="colorChange" style="background-color: lime"></button>
-            <button class="colorChange" style="background-color: navy"></button>
-            <button class="colorChange" style="background-color: violet"></button>
-            <button class="colorChange" style="background-color: beige"></button>
-            <button class="colorChange" style="background-color: gold"></button>
-            <button class="colorChange" style="background-color: silver"></button>
-            <button class="colorChange" style="background-color: teal"></button>
-            <button class="colorChange" style="background-color: lavender"></button>
-            <button class="colorChange" style="background-color: coral"></button>
-            <button class="colorChange" style="background-color: maroon"></button>
-            <button class="colorChange" style="background-color: indigo"></button>
-            <button class="colorChange" style="background-color: tan"></button>
-            <button class="colorChange" style="background-color: black"></button>
+        <canvas id="canvas"></canvas>
+        <div id="sidebar">
+        <button class="colorChange" style="background-color: black"></button>
+        <button class="colorChange" style="background-color: red"></button>
+        <button class="colorChange" style="background-color: green"></button>
+        <button class="colorChange" style="background-color: blue"></button>
+        <button class="colorChange" style="background-color: purple"></button>
+        <button class="colorChange" style="background-color: pink"></button>
+        <button class="colorChange" style="background-color: yellow"></button>
+        <button class="colorChange" style="background-color: orange"></button>
+        <button class="colorChange" style="background-color: white"></button>
+        <button class="colorChange" style="background-color: brown"></button>
+        <button class="colorChange" style="background-color: gray"></button>
+        <button class="colorChange" style="background-color: cyan"></button>
+        <button class="colorChange" style="background-color: magenta"></button>
+        <button class="colorChange" style="background-color: lime"></button>
+        <button class="colorChange" style="background-color: navy"></button>
+        <button class="colorChange" style="background-color: violet"></button>
+        <button class="colorChange" style="background-color: beige"></button>
+        <button class="colorChange" style="background-color: gold"></button>
+        <button class="colorChange" style="background-color: silver"></button>
+        <button class="colorChange" style="background-color: teal"></button>
+        <button class="colorChange" style="background-color: lavender"></button>
+        <button class="colorChange" style="background-color: coral"></button>
+        <button class="colorChange" style="background-color: maroon"></button>
+        <button class="colorChange" style="background-color: indigo"></button>
+        <button class="colorChange" style="background-color: tan"></button>
+        <button class="colorChange" style="background-color: black"></button>
 
-            <button id="clear">Clear</button>
-            <button id="eraser">Eraser</button>
+        <button id="clear">Clear</button>
+        <button id="eraser">Eraser</button>
 
-            <label for="size">Eraser/Brush size:</label>
-            <input type="range" id="size" min="1" max="50" value="5">
-            <span id="sizeValue">5</span>
+        <label for="size">Eraser/Brush size:</label>
+        <input type="range" id="size" min="1" max="50" value="5">
+        <span id="sizeValue">5</span>
         </div>
-            </div>
         <script src="script.js"></script>
     </body>
 </html>

@@ -53,8 +53,16 @@ let x = null,
 
     // eraser button
     document.getElementById('eraser').onclick = function() {
-        context.strokeStyle = "#FFFFFF";
-    }
+        erasing = !erasing;
+        if (erasing) {
+            lastColor = context.strokeStyle;
+            context.strokeStyle = "white";
+            this.style.backgroundColor = "lightgray";
+        } else {
+            context.strokeStyle = lastColor;
+            this.style.backgroundColor = "pink";
+        }
+    };
 
     // slider for the eraser
     const sizeSlider = document.getElementById('size');
