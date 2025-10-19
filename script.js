@@ -9,7 +9,6 @@ let x = null,
     y = null;
     context.lineWidth = 5;
     let draw = false;
-    let history = [];
 
     // mouse events
     window.addEventListener('mousedown', (e)=>(draw=true))
