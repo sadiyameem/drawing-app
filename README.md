@@ -14,7 +14,7 @@ This project uses HTML, CSS (inside the HTML), JavaScript and HTML canvas.
 # Motivation
 I made this project because based on the comments I got for my other projects it said to try something new and I never used canvas before so this proejct was a great way to learn.
 
-# Chanlleges/Learned
+# Challenges/Learned
 A challenge was to make the sidebar appear/work. I learned how to use HTML Canvas in a fun way.
 
 Created by Sadiya
